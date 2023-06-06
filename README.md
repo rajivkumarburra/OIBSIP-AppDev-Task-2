@@ -1,4 +1,4 @@
-# AppDev-Task-1-Calculator
+# AppDev-Task-2-Calculator
 
 A calculator made using the Flutter framework for android phones.
 
