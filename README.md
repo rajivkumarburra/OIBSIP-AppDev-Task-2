@@ -11,6 +11,5 @@ It is a simple calculator app made using the Flutter framework. It is a basic ca
 * Subtraction
 * Multiplication
 * Division
-* Modulus
 
 Upon launching the app, users are greeted with a clean and intuitive interface that resembles a real calculator, complete with a vibrant display and responsive buttons. The layout is thoughtfully organized, allowing users to effortlessly input and manipulate numbers and operators.
