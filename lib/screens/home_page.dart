@@ -83,74 +83,75 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Column(
-        children: [
-          Container(
-            padding: const EdgeInsets.only(top: 50, right: 20),
-            color: Colors.blueGrey,
-            height: 180,
-            alignment: Alignment.centerRight,
-            child: Text(
-              display,
-              style: const TextStyle(
-                fontSize: 60,
-                fontWeight: FontWeight.bold,
+        child: Column(
+          children: [
+            Container(
+              padding: const EdgeInsets.only(top: 50, right: 20),
+              color: Colors.blueGrey,
+              height: 180,
+              alignment: Alignment.centerRight,
+              child: Text(
+                display,
+                style: const TextStyle(
+                  fontSize: 60,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.right,
               ),
-              textAlign: TextAlign.right,
             ),
-          ),
-          const SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createButton("C"),
-              createButton("+"),
-              createButton("-"),
-              createButton("D"),
-            ],
-          ),
-          const SizedBox(height: 5),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createButton("7"),
-              createButton("8"),
-              createButton("9"),
-              createButton("÷"),
-            ],
-          ),
-          const SizedBox(height: 5),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createButton("4"),
-              createButton("5"),
-              createButton("6"),
-              createButton("X"),
-            ],
-          ),
-          const SizedBox(height: 5),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createButton("1"),
-              createButton("2"),
-              createButton("3"),
-              createButton("."),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createButton("0"),
-              createButton("("),
-              createButton(")"),
-              createButton("="),
-            ],
-          ),
-        ],
-      )),
+            const SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                createButton("C"),
+                createButton("+"),
+                createButton("-"),
+                createButton("D"),
+              ],
+            ),
+            const SizedBox(height: 5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                createButton("7"),
+                createButton("8"),
+                createButton("9"),
+                createButton("÷"),
+              ],
+            ),
+            const SizedBox(height: 5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                createButton("4"),
+                createButton("5"),
+                createButton("6"),
+                createButton("X"),
+              ],
+            ),
+            const SizedBox(height: 5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                createButton("1"),
+                createButton("2"),
+                createButton("3"),
+                createButton("."),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                createButton("0"),
+                createButton("("),
+                createButton(")"),
+                createButton("="),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
