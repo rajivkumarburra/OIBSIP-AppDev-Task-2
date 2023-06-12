@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   String display = "";
   String answer = "";
   String operand = "";
+  bool isPressed = false;
 
   Widget createButton(String text) {
     return MaterialButton(
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
                 display = "";
                 answer = "";
                 operand = "";
+                isPressed = false;
               });
             }
           : text == "D"
@@ -40,13 +42,16 @@ class _HomePageState extends State<HomePage> {
                       });
                     }
                   : text == "="
-                      ? () {
-                          setState(() {
-                            operand += display;
-                            answer = Calculation.calculateResult(operand);
-                            display = answer;
-                          });
-                        }
+                      ? isPressed
+                          ? () {}
+                          : () {
+                              setState(() {
+                                operand += display;
+                                answer = Calculation.calculateResult(operand);
+                                display = answer;
+                                isPressed = true;
+                              });
+                            }
                       : () {
                           setState(() {
                             display += text;
